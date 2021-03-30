@@ -1,0 +1,167 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color: #eee;
+}
+img{
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+.top{
+  height: 20px;
+}
+.game {
+  width: 800px;
+  height: 600px;
+  border: 2px solid;
+  margin: 0 300px;
+  /* margin-top: 20px; */
+  position: relative;
+  overflow: hidden;
+}
+
+.game .sky {
+  height: 100%;
+  width: 200%;
+  background: url("img/sky.png");
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.game .land {
+  height: 112px;
+  width: 200%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: url("img/land.png");
+}
+
+.game .bird {
+  width: 33px;
+  height: 26px;
+  position: absolute;
+  left: 150px;
+  top: 150px;
+  background: url("img/bird.png");
+}
+
+p {
+  text-align: center;
+}
+
+.pipe {
+  position: absolute;
+  width: 52px;
+}
+
+.up {
+  background: url("img/pipeDown.png") no-repeat;
+  background-position: left bottom;
+}
+
+.down {
+  background: url("img/pipeUp.png") no-repeat;
+}
+
+.game .over {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, .5);
+  z-index: 9;
+  line-height: 600px;
+  color: #fff;
+  font-size: 5em;
+  text-align: center;
+  display: none;
+}
+.score{
+  position: absolute;
+  display: inline-block;
+  opacity: .9;
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 200px;
+  width: 400px;
+  /* line-height: 50px; */
+  font-size: 2em;
+  color:white;
+  font-weight: bolder;
+  z-index: 10;
+  overflow: hidden;
+}
+.btn{
+  position: fixed;
+  left: 1250px;
+  top: 150px;
+  width: 200px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: rgb(46, 155, 149);
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  opacity: .6;
+  user-select: none;
+}
+.btn:hover{
+  background-color: rgb(128, 15, 80);
+  color: white;
+  font-size: 15px;
+  transition: 0.8s;
+}
+.plan{
+  position: fixed;
+  top: 250px;
+  left: 1250px;
+  border-radius: 10px;
+  border: 1px solid black;
+  width: 220px;
+  height: 370px;
+  display: none;
+  overflow: hidden;
+}
+.plan img{
+  display: inline-block;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+.plan .tips{
+  display: inline-block;
+  position: absolute;
+  top: 50px;
+  text-indent: 100px;
+  writing-mode: vertical-lr;
+  color: rgba(216, 9, 243, 0.795);
+  font-size: 2em;
+  font-weight: bolder;
+}
+.speak{
+  position: absolute;
+  display: inline-block;
+  width: 220px;
+  height: 100px;
+  border-bottom: 3px solid turquoise;
+  border-top: 3px solid turquoise ;
+  top: 20px;
+  left:1250px;
+  font-weight: bolder;
+  text-align: center;
+  color:rgb(251, 7, 7);
+}
+/*填充图 https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2783946986,2573261917&fm=26&gp=0.jpg */
+/* 底边top 620px
+370/10 = 37px/500ms */
